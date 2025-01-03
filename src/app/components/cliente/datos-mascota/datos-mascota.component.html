@@ -1,0 +1,254 @@
+<div class="servicios">
+    <div class="create-an-account">
+        <div class="fondo-pgina-principal-3-parent">
+            <img class="fondo-pgina-principal-3" alt="" src="/assets/img/Fondo página principal 3.png">
+            <img class="fondo-pgina-principal-4" alt="" src="/assets/img/Fondo página principal 4.png">
+        </div>
+        <div class="fondo-pgina-principal-3-group">
+            <img class="fondo-pgina-principal-31" alt="" src="/assets/img/Fondo página principal 3.png">
+            <img class="fondo-pgina-principal-41" alt="" src="/assets/img/Fondo página principal 4.png">
+        </div>
+        <img class="ubicacion-cuadro-opciones" src="/assets/img/Rectangle 4.png" alt="" >
+        <div class="fi-rr-shopping-cart-parent">
+            <a (click)="homeSeleccion()"> 
+                <img class="fi-rr-home-icon" alt="" src="/assets/img/fi-rr-home_activo.png" *ngIf="!isHome"> 
+                <img class="fi-rr-home-icon" alt="" src="/assets/img/fi-rr-home_inactivo.png" *ngIf="isHome"> 
+            </a>
+            <a (click)="mascotasSeleccion()"> 
+                <img class="fi-rr-flower-icon" alt="" src="/assets/img/fi-rr-flower_activo.png" *ngIf="mostraricono()">
+                <img class="fi-rr-flower-icon" alt="" src="/assets/img/fi-rr-flower_inactivo.png" *ngIf="!mostraricono()">
+            </a>    
+            <a (click)="salirSeleccion()"> 
+                <img class="fi-rr-sign-out-alt-icon" alt="" src="/assets/img/fi-rr-sign-out-alt_activo.png" *ngIf="!isSalir">
+                <img class="fi-rr-sign-out-alt-icon" alt="" src="/assets/img/fi-rr-sign-out-alt_inactivo.png" *ngIf="isSalir">
+            </a>            
+        </div>
+
+        <div [ngClass]="{'hidden': isHome}">
+            <img [src]="duenioMascotas.imagen" alt="" class="ellipse-div-perfil">   
+            <img class="ubicar-cuadro-foto" alt="" src="/assets/img/Rectangle 5.png" >       
+            
+            <input hide id="btnOriginal" type="file" accept="image/*" (change)="upload($event,tipoImagen)" class="hidden">
+            <button class="boton-cambiar-foto" onclick="document.getElementById('btnOriginal').click();">Cambiar foto </button>
+
+            <div class="titulo-datos">Datos Dueño Mascotas</div>
+            <div class="email-perfil">
+
+                <div class="label-perfil">No Documento</div>
+                <input type="text" name="nit" class="text-field1" size="56" placeholder="Introduce el nit o documento"
+                    (blur)="habilitarGuardarInfoDuenioMascota()"  [(ngModel)]= "duenioMascotas.noDocumento" required>
+
+                <div class="label-perfil">No Contacto*</div>
+                <input type="text" name="contacto" class="text-field1" size="56" placeholder="Introduce Número contacto" 
+                    (blur)="habilitarGuardarInfoDuenioMascota()" [(ngModel)]= "duenioMascotas.noContacto" required>
+
+                <div class="label-perfil">Correo Electronico*</div>
+                <input type="text" name="correo" class="text-field1" size="56" placeholder="Introduce el correo electronico" 
+                    (blur)="habilitarGuardarInfoDuenioMascota()" [(ngModel)]= "duenioMascotas.email" required>
+
+                    <div [ngClass]="{'hidden': btnCrearNaranja}">
+                        <div class="boton-guardar-perfil"(click)="actualizarInfoDuenioMascota()" onkeypress="">Guardar</div>
+                        
+                    </div>
+    
+                    <div [ngClass]="{'hidden': btnCrearGris}">
+                        <div class="boton-gris-perfil"> Guardar</div>
+                    </div>             
+            </div>
+
+            <div class="nombre-perfil">
+                <div class="label-perfil">Nombre*</div>
+                <input type="text" name="nombre" class="text-field1" size="56"  placeholder="Introduce el nombre" 
+                    (blur)="habilitarGuardarInfoDuenioMascota()" [(ngModel)]= "duenioMascotas.nombre" required>
+
+                <div class="label-perfil">Apellido*</div>
+                <input type="text" name="apellido" class="text-field1" size="56" placeholder="Introduce el apellido" 
+                    (blur)="habilitarGuardarInfoDuenioMascota()" [(ngModel)]= "duenioMascotas.apellido" required>
+                
+                <div class="label-perfil">Contraseña*</div>
+                <input type="text" name="clave" class="text-field1" size="56" 
+                    (blur)="habilitarGuardarInfoDuenioMascota()" [(ngModel)]= "duenioMascotas.clave" required>
+
+                <div class="label-perfil">Dirección</div>
+                <input type="text" name="direccion" class="text-field1" size="56" placeholder="Introduce Dirección" 
+                    (blur)="habilitarGuardarInfoDuenioMascota()" [(ngModel)]= "duenioMascotas.direccion" required>
+
+            </div>   
+
+        </div>    
+
+        <div [ngClass]="{'hidden': isMascotas}">
+            <div class="wrapper">
+                <div>
+                    <div class="titulo-vacunas">Mis Amigos</div>  
+                    <br><br>
+                    <img alt="" src="/assets/img/Line 1.png" width="300px">
+                    <br>
+                    <a (click)="agregarMascota()"> 
+                        <img  alt="" src="/assets/img/Agregar.png" > 
+                    </a>   
+                    <br>
+                    <table  id="customers">
+                        <tr>
+                            <th></th>  
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <tr *ngFor=" let mascota of listaMascotas">
+                            <td><img [src]="mascota.imagen" alt="" width="150px" height="150px">  </td>
+                            <td>{{mascota.nombre}}</td>
+                            <td><a (click)="actualizarInfoMascota(mascota)"> <img alt="Detalle" src="/assets/img/ver.png" class="tamanio-boton-ver"></a></td>
+                        </tr>
+                    </table>
+                    <img alt="" src="/assets/img/Line 1.png" width="300px">
+                </div>
+             
+                <div>
+                    <div class="titulo-vacunas">Información Vacunas</div>  
+                    <br><br>
+                    <img alt="" src="/assets/img/Line 1.png" width="300px">
+                    <br>
+                    <a (click)="this.openModelCrearVacuna(crearvacuna)"> 
+                        <img  alt="" src="/assets/img/Agregar.png" > 
+                    </a>   
+                    <br>
+                    <table  id="vacunas">
+                        <tr>
+                            <th>Nombre</th>  
+                            <th>Fecha</th> 
+                        </tr>
+                        <tr>
+                            <td>Nobivac</td>
+                            <td>09-Diciembre-2022</td>
+                        </tr>
+                      </table>
+                      <img alt="" src="/assets/img/Line 1.png" width="300px">
+                </div>
+            </div>            
+        </div>    
+
+        <div [ngClass]="{'hidden': isSalir}">
+        
+        </div>    
+
+        <div [ngClass]="{'hidden': isAgregarMascota}">
+            <img [src]="mascotaInfo.imagen"  alt="" class="ellipse-div-perfil"> 
+            <img class="ubicar-cuadro-foto" alt="" src="/assets/img/Rectangle 5.png" >                
+            <input hide id="btnOriginal" type="file" accept="image/*" (change)="uploadPet($event,tipoImagenMascota)" class="hidden">
+            <button class="boton-cambiar-foto" onclick="document.getElementById('btnOriginal').click();">Cambiar foto </button>
+
+
+
+            <div class="titulo-datos">Datos de la Mascota</div>
+            <div class="email-perfil">
+                
+                <div class="label-perfil">Nombre</div>
+                <input type="text" name="nit" class="text-field1" size="56" placeholder="Introduce nombre Mascota" 
+                    (blur)="habilitarGuardarInfoMascota()" [(ngModel)]= "mascotaInfo.nombre" required>
+
+                <div class="label-perfil">Genero*</div>
+                <select required class="select-field1" (blur)="habilitarGuardarInfoMascota()" [(ngModel)]="mascotaInfo.idGenero" name="genero" #genero="ngModel">
+                    <option *ngFor="let generos of listaGenero"  [ngValue]="generos.id">{{generos.valor}}</option>
+                  </select>
+
+                  <div [ngClass]="{'hidden': btnCrearNaranjaM}">
+                    <div class="boton-guardar-perfil"(click)="salvarInfoMascota()" onkeypress="">Guardar</div>  
+                </div>
+
+                <div [ngClass]="{'hidden': btnCrearGrisM}">
+                    <div class="boton-gris-perfil"> Guardar</div>
+                </div>  
+
+
+            </div>
+
+            <div class="nombre-perfil">
+                <div class="label-perfil">Raza*</div>
+                  <select required class="select-field1" (blur)="habilitarGuardarInfoMascota()" [(ngModel)]="mascotaInfo.idRaza" name="raza" #raza="ngModel">
+                    <option *ngFor="let razas of listaRaza"  [ngValue]="razas.id">{{razas.valor}}</option>
+                  </select>
+
+                 <div class="label-perfil">Edad*</div>
+                    <input type="text" name="edad" class="text-field-modal"  
+                        (blur)="habilitarGuardarInfoMascota()" [(ngModel)]= "mascotaInfo.edad" required>
+
+                <div class="label-perfil">Situaciones de Comportamiento</div>
+                <textarea name="text" name="cuidados" class="text-field-area" maxlength="500" 
+                    (blur)="habilitarGuardarInfoMascota()" [(ngModel)]="mascotaInfo.observaciones">
+                </textarea>
+            </div>   
+
+        </div>    
+    </div>
+</div>
+
+<ng-template #crearmascota>
+    <div class="modal-body modal-crear">
+        <div class="modal-crear-usuario">
+            <a href="#cliente" onclick="modalRefCrearMascota.hide()"> <img class="icons" alt="" src="/assets/img/Icons.png"> </a>
+            <div class="modal-titulo">
+                CREAR AMIGO
+            </div>
+            
+            <div class="modal-columna1">
+                
+                <div class="label-perfil">Nombre*</div>
+                <input type="text" name="nit" class="text-field-modal"   required>
+
+                <div class="label-perfil">Raza*</div>
+                <select required class="select-field1" >
+                    <option value="1">French </option>
+                    <option value="2">Beagle</option>
+                    <option value="3">Doberman</option>
+                  </select>
+
+                <div class="label-perfil">Edad*</div>
+                <input type="text" name="edad" class="text-field-modal"  required>
+                
+                <button class="boton-guardar-amigo"> Registro Amigo </button>
+              
+            </div>
+
+            <div class="modal-columna2">
+              
+                <div class="label-perfil">Sexo*</div>
+                <select required class="select-field1" >
+                    <option value="1">Macho</option>
+                    <option value="2">Hembra</option>
+                  </select>
+                
+                <div class="label-perfil">Cuidados</div>
+                <textarea name="text" name="cuidados" class="text-field-area" maxlength="500"></textarea>
+                
+            </div>
+        </div>    
+        
+    </div>   
+</ng-template>
+
+<ng-template #crearvacuna>
+    <div class="modal-body modal-crear-vacuna">
+        <div class="modal-crear-texto-vacuna">
+            <a href="#cliente" onclick="modalRefCrearVacuna.hide()"> <img class="icons" alt="" src="/assets/img/Icons.png"> </a>
+            <div class="modal-titulo">
+                VACUNA
+            </div>
+            
+            <div class="modal-columna1">
+                
+                <div class="label-perfil">Nombre*</div>
+                <input type="text" name="nombrevacuna" class="text-field-modal"   required>
+
+                <div class="label-perfil">Fecha*</div>
+                <input type="date" name="fecha" class="text-field-modal"   required>
+                
+                <button class="boton-guardar-vacuna"> Guardar </button>
+              
+            </div>
+
+       
+        </div>    
+        
+    </div>   
+</ng-template>
+

@@ -1,0 +1,118 @@
+<div class="crear-cuenta-natural">
+    <img class="image-icon" alt="" src="/assets/img/Image.png">
+
+    <div class="create-an-account">
+        <div class="fondo-pgina-principal-3-parent">
+            <img class="fondo-pgina-principal-3" alt="" src="/assets/img/Fondo página principal 3.png">
+            <img class="fondo-pgina-principal-4" alt="" src="/assets/img/Fondo página principal 4.png">
+        </div>
+
+        <div class="crea-tu-cuenta-parent">
+            <div class="crea-tu-cuenta">¡Crea tu cuenta!</div>
+            <div class="selecciona-si-eres">Selecciona si eres ´Persona Natural´ o ´Persona Jurídica´</div>
+
+            <div class="tabs-nav-parent  ">
+                <div id="btnpn" class="tabs-nav" (click)="this.personaNatural()" onkeypress="">
+                    Persona Natural
+                </div>
+                <div id="btnpj" class="tabs-nav1" (click)="this.personaJuridica()" onkeypress="">
+                    Persona Jurídica
+                </div>
+            </div>
+
+            <div class="name">
+                <form id="formRegistrarNatural" #formRegistrarNatural="ngForm" (ngSubmit)="create(crearExitoso)">
+                    <div class="alineacion-izq">
+                        <div class="text-field2">
+                            <div class="label-wrapper">
+                                <div class="label">Nombre*</div>
+                            </div>
+                            <input type="text" name="nombre" class="text-field1" size="56" (blur)="habilitarDeshabilitarBtoCrear()" [(ngModel)]="personaInfo.nombre" #nombre="ngModel" required>
+                        </div>
+                    </div>
+
+                    <div class="alineacion-der">
+                        <div class="text-field2">
+                            <div class="label-wrapper">
+                                <div class="label">Apellido*</div>
+                            </div>
+                            <input type="text" name="apellido" class="text-field1" size="56" (blur)="habilitarDeshabilitarBtoCrear()" [(ngModel)]="personaInfo.apellido" #apellido="ngModel" required>
+                        </div>
+
+                    </div>
+                    <br>
+                    <div class="text-field2">
+                        <div class="label-wrapper">
+                            <div>Plan*</div>
+                        </div>
+                        <div class="email">
+                            <select required class="form-control " (blur)="habilitarDeshabilitarBtoCrear()" [(ngModel)]="personaInfo.plan" name="plan" #plan="ngModel">
+                                <option *ngFor="let planes of listaPlanes"  [ngValue]="planes.id">{{planes.descripcion}}  - {{planes.valor}}</option>
+                              </select>
+                        </div>
+                    </div>
+
+                    <div class="text-field2">
+                        <div class="label-wrapper">
+                            <div>Correo Electronico*</div>
+                        </div>
+                        <div class="email">
+                            <input type="text" name="correo" class="text-field4 inputs-wrapper inputs " size="56" (blur)="habilitarDeshabilitarBtoCrear()" placeholder="Introduce el correo" [(ngModel)]="personaInfo.email" #email="ngModel" required>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="text-field5">
+                        <div class="label-wrapper">
+                            <div class="label">Contraseña*</div>
+                            <div class="password-hide-see">
+                                <img class="icon" alt="" src="icon.svg">
+                                <div class="hide">Hide</div>
+                            </div>
+                        </div>
+                        <div class="email">
+                            <input type="password" name="clave" class="text-field4 inputs-wrapper inputs " size="56" (blur)="habilitarDeshabilitarBtoCrear()" (focus)="limpiarMensajeError()" [(ngModel)]="personaInfo.clave" #password="ngModel" required>
+                        </div>
+                        <div class="error-message">{{mensajeError}}</div>
+                        <input type="submit" [ngClass]="{'button sign-up2 sign-up-wrapper': btnCrearNaranja,'button-Gris sign-up2 sign-up-wrapper': btnCrearGris}" value="Crear Cuenta" [disabled]="!formRegistrarNatural.form.valid">
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+        <div class="create-an-account-inner">
+            <div class="div">
+                <span class="ya-tienes-una">¿Ya tienes una cuenta?</span>
+                <span class="span1"> </span>
+                <span class="ingresa">Ingresa</span>
+            </div>
+        </div>
+
+        <div class="button1" (click)="regresarHome()" onkeypress="">
+            <img class="button-child" alt="" src="Arrow 3.svg">
+        </div>
+    </div>
+</div>
+
+<ng-template #crearExitoso>
+    <div class="modal-body sign-up-modal">
+        <div class="modal-crear-usuario">
+            <a href="#home" onclick="modalRefCrearUsuario.hide()"> <img class="icons" alt="" src="/assets/img/Icons.svg"> </a>
+
+            <div class="frame-parent">
+                <div class="bienvenido-de-vuelta-parent">
+                    <div class="bienvenido-de-vuelta">Usuario Creado con Exito</div>
+                    <div class="text"> </div>
+                </div>
+                <br>
+                <div class="label-modal">
+                    <p class="introduce-tu-mensaje">Al correo {{personaInfo.email}} se ha enviado la factura de cobro </p>
+                    <p class="introduce-tu-mensaje">Para el plan seleccionado</p>
+                    <p class="introduce-tu-mensaje">Tienes menos de 24 horas para realizar el pago y activar tu cuenta</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</ng-template>

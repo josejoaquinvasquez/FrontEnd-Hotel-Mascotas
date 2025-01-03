@@ -1,1 +1,694 @@
-/* You can add global styles to this file, and also import other style files */
+@media (min-width: 320px) and (max-width: 1390px) {
+    fondo-pgina-principal-3 {
+        position: absolute;
+        top: 0px;
+        left: 1px;
+        width: 1546px;
+        height: 852px;
+        object-fit: cover;
+        opacity: 0.5;
+    }
+    .fondo-pgina-principal-4 {
+        position: absolute;
+        top: 852px;
+        left: 0px;
+        width: 1546px;
+        height: 813px;
+        object-fit: cover;
+        opacity: 0.5;
+    }
+    .fondo-pgina-principal-3-parent {
+        position: absolute;
+        top: 829px;
+        left: -54px;
+        width: 1547px;
+        height: 1665px;
+    }
+    .fondo-pgina-principal-1 {
+        position: absolute;
+        top: 106px;
+        left: 26x;
+        width: 1100px;
+        height: 628px;
+        object-fit: cover;
+    }
+    .nete-hoy-mismo {
+        align-self: stretch;
+        position: relative;
+        line-height: 110%;
+        font-weight: 600;
+    }
+    .empieza-a-disfrutar {
+        align-self: stretch;
+        position: relative;
+        font-size: 24px;
+        line-height: 150%;
+        color: #828282;
+    }
+    .header {
+        position: absolute;
+        top: 2357px;
+        left: calc(50% - 364px);
+        border-radius: 100px;
+        width: 764px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 24px;
+        text-align: center;
+        font-size: 40px;
+        font-family: Inter;
+    }
+    .encuentra-tu-plan {
+        align-self: stretch;
+        position: relative;
+        letter-spacing: -0.02em;
+    }
+    .copy {
+        position: absolute;
+        top: 829px;
+        left: calc(50% - 422px);
+        width: 842px;
+        height: 137px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        text-align: center;
+        font-size: 64px;
+        font-family: Inter;
+    }
+    .fondo-beneficios-1-icon {
+        position: absolute;
+        top: 1665px;
+        left: -140px;
+        width: 1440px;
+        height: 677px;
+        object-fit: cover;
+    }
+    .lo-mejor-para {
+        width: 770px;
+        left: -48px;
+        position: relative;
+        letter-spacing: -0.02em;
+        display: inline-block;
+    }
+    .copy1 {
+        position: absolute;
+        top: 1684px;
+        left: calc(50% - 156px);
+        width: 742px;
+        height: 137px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 10px;
+        font-size: 64px;
+        font-family: Inter;
+    }
+    .la-primera-plataforma {
+        width: 843px;
+        position: relative;
+        font-size: 50px;
+        letter-spacing: -0.02em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .personaliza-la-informacin {
+        width: 631px;
+        position: relative;
+        line-height: 150%;
+        font-family: Inter;
+        color: #828282;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 52px;
+        flex-shrink: 0;
+    }
+    .comenzar {
+        width: 182.2px;
+        position: relative;
+        line-height: 150%;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        transform: rotate(-0.9deg);
+    }
+    .button {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(2px);
+        border-radius: 12px;
+        background-color: #ee5905;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 14px 24px;
+        mix-blend-mode: normal;
+        color: #fff;
+    }
+    .header1 {
+        position: absolute;
+        top: 230px;
+        left: calc(50% - 388px);
+        width: 775px;
+        height: 520px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+        text-align: center;
+    }
+    .button1 {
+        position: absolute;
+        top: 2513px;
+        left: 545px;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+        border-radius: 100px;
+        background-color: #ee5905;
+        width: 58px;
+        height: 56px;
+        cursor: pointer;
+    }
+    .inicio-child {
+        position: absolute;
+        top: 2528px;
+        left: 530px;
+        border-radius: 24px;
+        width: 0px;
+        height: 26px;
+        object-fit: contain;
+    }
+    .bsico {
+        margin: 0;
+    }
+    .chihuahua {
+        margin: 0;
+        font-size: 35px;
+    }
+    .bsico-chihuahua-txt-container {
+        line-break: anywhere;
+        width: 100%;
+    }
+    .bsico-chihuahua {
+        width: 270px;
+        position: relative;
+        line-height: 150%;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+    }
+    .precio-mensual {
+        margin: 0;
+        font-weight: 500;
+    }
+    .p {
+        margin: 0;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .lorem-ipsum-dolor {
+        font-weight: 500;
+    }
+    .lorem-ipsum-dolor-sit-amet-qu1 {
+        margin-bottom: 0px;
+    }
+    .lorem-ipsum-dolor-sit-amet-qu {
+        margin: 0;
+        padding-left: 21px;
+    }
+    .precio-mensual-16900-container1 {
+        width: 100%;
+    }
+    .precio-mensual-16900-container {
+        width: 241px;
+        position: relative;
+        line-height: 150%;
+        display: flex;
+        align-items: center;
+    }
+    .precio-mensual-16900-lorem-i-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .avatar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 16px;
+        color: #828282;
+    }
+    .basico-chiguahua {
+        flex: 1;
+        box-shadow: -4px 8px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+        background-color: #fafafa;
+        border: 1px solid #f7f7f7;
+        box-sizing: border-box;
+        height: 511px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 32px;
+        gap: 28px;
+    }
+    .customer-quote {
+        width: 432px;
+        box-shadow: -4px 8px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+        background-color: #fafafa;
+        border: 1px solid #f7f7f7;
+        box-sizing: border-box;
+        height: 548px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 32px;
+        gap: 28px;
+    }
+    .cards {
+        position: absolute;
+        top: 1001px;
+        left: calc(50% - 595px);
+        width: 1214px;
+        height: 511px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 40px;
+    }
+    .personalizacin {
+        position: absolute;
+        top: 1868px;
+        left: 623px;
+        line-height: 150%;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        width: 270px;
+    }
+    .ajusta-la-informacin {
+        width: 502px;
+        position: relative;
+        line-height: 150%;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+    }
+    .avatar3 {
+        position: absolute;
+        top: 1904px;
+        left: 623px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 16px;
+        color: #828282;
+    }
+    .profesionalismo {
+        position: absolute;
+        top: 1993px;
+        left: 623px;
+        line-height: 150%;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        width: 270px;
+    }
+    .avatar4 {
+        position: absolute;
+        top: 2029px;
+        left: 623px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 16px;
+        color: #828282;
+    }
+    .planes {
+        position: relative;
+        line-height: 150%;
+        font-weight: 500;
+        cursor: pointer;
+    }
+    .beneficios {
+        position: relative;
+        line-height: 150%;
+        font-weight: 500;
+        cursor: pointer;
+    }
+    .button2 {
+        filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.05));
+        border-radius: 12px;
+        border: 2px solid #0a0d56;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 14px 24px;
+        font-size: 16px;
+    }
+    .items {
+        position: absolute;
+        top: 65px;
+        right: 80px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 48px;
+    }
+    .logo {
+        position: absolute;
+        top: 5px;
+        left: 10px;
+        font-size: 25px;
+        line-height: 150%;
+        font-weight: 500;
+    }
+    .navigation {
+        position: absolute;
+        width: 100%;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        border-radius: 0px 0px 24px 24px;
+        background-color: #fff;
+        border-right: 4px solid rgba(60, 59, 110, 0.1);
+        border-bottom: 4px solid rgba(60, 59, 110, 0.1);
+        border-left: 4px solid rgba(60, 59, 110, 0.1);
+        box-sizing: border-box;
+        height: 164px;
+        font-size: 20px;
+    }
+    .inicio {
+        width: 100%;
+        position: relative;
+        background-color: #fff;
+        height: 2616px;
+        overflow: hidden;
+        text-align: left;
+        font-size: 24px;
+        color: #0a0d56;
+        font-family: Poppins;
+    }
+    .icons {
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        width: 32px;
+        height: 32px;
+        overflow: hidden;
+    }
+    .bienvenido-de-vuelta {
+        position: relative;
+        font-weight: 600;
+    }
+    .text {
+        width: 293px;
+        position: relative;
+        font-size: 16px;
+        color: rgba(102, 102, 102, 0.8);
+        display: inline-block;
+    }
+    .bienvenido-de-vuelta-parent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2px;
+    }
+    .label {
+        position: relative;
+    }
+    .span {
+        font-size: 18px;
+    }
+    .inputs {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .inputs-wrapper {
+        position: absolute;
+        top: 2px;
+        left: 1px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .text-field {
+        align-self: stretch;
+        position: relative;
+        border-radius: 12px;
+        border: 1px solid rgba(102, 102, 102, 0.35);
+        box-sizing: border-box;
+        height: 56px;
+        overflow: hidden;
+        flex-shrink: 0;
+        font-size: 12px;
+        color: #828282;
+    }
+    .email {
+        width: 342px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 6px;
+    }
+    .sign-up-wrapper {
+        position: absolute;
+        top: calc(50% - 14px);
+        left: calc(50% - 46px);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .sign-up-wrapper-modal {
+        position: absolute;
+        top: calc(50% - 14px);
+        left: calc(50% - 170px);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .button-continuar {
+        width: 342px;
+        position: relative;
+        border-radius: 12px;
+        background-color: #ee5905;
+        height: 56px;
+        overflow: hidden;
+        flex-shrink: 0;
+        text-align: center;
+        font-size: 18px;
+        color: #fff;
+    }
+    .button-Gris {
+        width: 342px;
+        position: relative;
+        border-radius: 12px;
+        background-color: #969992;
+        height: 56px;
+        overflow: hidden;
+        flex-shrink: 0;
+        text-align: center;
+        font-size: 18px;
+        color: #fff;
+    }
+    .email-parent {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 16px;
+        margin-top: 85px;
+        text-align: left;
+        font-size: 16px;
+        color: #666;
+    }
+    .frame-parent {
+        position: absolute;
+        top: 79px;
+        left: 37px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .password-hide-see {
+        position: absolute;
+        top: 229px;
+        right: 73px;
+        width: 24px;
+        height: 24px;
+    }
+    .divider1 {
+        flex: 1;
+        position: relative;
+        background-color: rgba(102, 102, 102, 0.25);
+        height: 2px;
+    }
+    .or {
+        position: relative;
+        font-weight: 500;
+    }
+    .divider {
+        position: absolute;
+        top: 413px;
+        left: 5px;
+        width: 342px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 23px;
+        text-align: left;
+        font-size: 14px;
+        color: #ee5905;
+    }
+    .sign-up {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        border-radius: 24px;
+        background-color: #fff;
+        width: 416px;
+        height: 512px;
+        overflow: hidden;
+    }
+    .modal-iniciar-sesin {
+        width: 100%;
+        position: relative;
+        border-radius: 24px;
+        background-color: #fff;
+        height: 512px;
+        overflow: hidden;
+        text-align: center;
+        font-size: 24px;
+        color: #0a0d56;
+        font-family: Poppins;
+    }
+    .modal-recuperar-cuenta {
+        width: 100%;
+        position: relative;
+        border-radius: 24px;
+        background-color: #fff;
+        height: 512px;
+        overflow: hidden;
+        text-align: center;
+        font-size: 24px;
+        color: #333;
+        font-family: Poppins;
+    }
+    .frame-parent-recuperar-cuenta {
+        position: absolute;
+        top: 141px;
+        left: 37px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .recupera-tu-cuenta-parent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2px;
+    }
+    .email-parent-recuperar-cuenta {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 18px;
+        margin-top: 145px;
+        font-size: 12px;
+        color: #666;
+    }
+    .introduce-tu-correo {
+        margin: 0;
+    }
+    .inputs-wrapper-recuperar-cuenta {
+        position: absolute;
+        top: 14px;
+        left: 24px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .button-recuperar-cuenta-enviar {
+        width: 342px;
+        position: relative;
+        border-radius: 12px;
+        background-color: #333;
+        height: 56px;
+        overflow: hidden;
+        flex-shrink: 0;
+        opacity: 0.25;
+        font-size: 18px;
+        color: #fff;
+    }
+    .button1-recuperar-cuenta {
+        position: absolute;
+        top: 31px;
+        left: 37px;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+        border-radius: 100px;
+        background-color: #828282;
+        width: 39px;
+        height: 38px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 14px 0px;
+        box-sizing: border-box;
+    }
+    .button-child {
+        width: 14px;
+        position: relative;
+        border-radius: 24px;
+        height: 0px;
+        object-fit: contain;
+    }
+    .divider-recuperar-cuenta {
+        position: absolute;
+        top: 389px;
+        left: 34px;
+        width: 342px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 23px;
+        text-align: left;
+        font-size: 14px;
+    }
+    .hidden {
+        display: none;
+    }
+}

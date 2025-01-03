@@ -1,0 +1,587 @@
+.hidden {
+    display: none;
+}
+
+input:required:invalid {
+    background-color: ivory;
+    border: none;
+    outline: 1px solid red;
+    border-radius: 5px;
+}
+textarea:required:invalid {
+    background-color: ivory;
+    border: none;
+    outline: 1px solid red;
+    border-radius: 5px;
+}
+
+select:required:invalid {
+    background-color: ivory;
+    border: none;
+    outline: 1px solid red;
+    border-radius: 5px;
+}
+
+.servicios {
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    border: 0px solid rgba(102, 102, 102, 0.35);
+    box-sizing: border-box;
+    height: 1053px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    text-align: left;
+    font-size: 16px;
+    color: #666;
+    font-family: Poppins;
+}
+
+.create-an-account {
+    width: 1480px;
+    position: relative;
+    height: 1053px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.fondo-pgina-principal-3-parent {
+    position: absolute;
+    top: 0px;
+    left: -56px;
+    width: 1005px;
+    height: 1053px;
+}
+
+.fondo-pgina-principal-3 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1005px;
+    height: 514.3px;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.fondo-pgina-principal-4 {
+    position: absolute;
+    top: 514.28px;
+    left: 0px;
+    width: 1005px;
+    height: 538.7px;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.fondo-pgina-principal-3-group {
+    position: absolute;
+    top: 0px;
+    left: 949px;
+    width: 980px;
+    height: 1053px;
+}
+
+.fondo-pgina-principal-31 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 980px;
+    height: 514.3px;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.fondo-pgina-principal-41 {
+    position: absolute;
+    top: 514.28px;
+    left: 0px;
+    width: 980px;
+    height: 538.7px;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.fi-rr-shopping-cart-parent {
+    position: absolute;
+    top: 60px;
+    left: 93px;
+    width: 43px;
+    height: 547px;
+}
+
+.ubicacion-cuadro-opciones {
+    position: absolute;
+    top: 35px;
+    left: 69px;
+    width: 90px;
+    height: 500px;
+    border-radius: 24px;
+}
+
+
+.fi-rr-home-icon {
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+}
+.fi-rr-flower-icon {
+    position: absolute;
+    top: 80px;
+    left: 5px;
+    width: 35px;
+    height: 36px;
+    overflow: hidden;
+}
+
+.fi-rr-sign-out-alt-icon {
+    position: absolute;
+    top: 163px;
+    left: 4px;
+    width: 37px;
+    height: 37px;
+    overflow: hidden;
+}
+
+.ellipse-div-perfil {
+    position: absolute;
+    top: 50px;
+    left: 265px;
+    border-radius: 50%;
+    background-color: #d9d9d9;
+    width: 115px;
+    height: 115px;
+}
+
+.ubicar-cuadro-foto{
+    position: absolute;
+    top: 35px;
+    left: 240px;
+    width: 930px;
+    height: 140px;
+}
+
+.talento-canes-perfil {
+    position: absolute;
+    top: 85px;
+    left: 407px;
+    font-size: 25px;
+    font-weight: 500;
+    color: #0a0d56;
+    text-align: center;
+}
+
+
+.email-perfil {
+    position: absolute;
+    top: 230px;
+    left: 236px;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 4px;
+}
+
+.nombre-perfil {
+    position: absolute;
+    top: 230px;
+    left: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 4px;
+}
+
+.apellido-perfil {
+    position: absolute;
+    top: 260px;
+    left: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 4px;
+}
+
+.label-perfil {
+    position: relative;
+}
+
+
+  .text-field1 {
+    align-self: stretch;
+    position: relative;
+    border-radius: 12px;
+    border: 1px solid rgba(102, 102, 102, 0.35);
+    box-sizing: border-box;
+    height: 40px;
+    width: 450px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.boton-guardar-perfil {
+    border: none;
+    position: absolute;
+    font-weight: 600;
+    border-radius: 12px;
+    background-color: #ee5905;
+    width: 182px;
+    height: 56px;
+    overflow: hidden;
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 220px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton-gris-perfil {
+    border: none;
+    position: absolute;
+    font-weight: 600;
+    border-radius: 12px;
+    background-color: #969992;
+    width: 182px;
+    height: 56px;
+    overflow: hidden;
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 220px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.boton-cambiar-foto {
+    border: none;
+    position: absolute;
+    font-weight: 600;
+    top: 90px;
+    left: 700px;
+    border-radius: 12px;
+    background-color: #ee5905;
+    width: 182px;
+    height: 56px;
+    overflow: hidden;
+    font-size: 20px;
+    color: #fff;
+}
+
+.titulo-seccion{
+    position: absolute;
+    top: 55px;
+    left: 256px;
+    font-size: 25px;
+    font-weight: 500;
+    color: #0a0d56;
+    text-align: center;
+}
+
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+  }
+  
+  #customers td, #customers th {
+    border: 0px solid #ddd;
+    padding: 1px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    text-align: center;
+    vertical-align: top;
+
+  }
+
+  #customers td:first-child {
+    width: 50px;
+    text-align: center;
+  }
+  #customers td:nth-child(2) {
+    width: 100px;
+ 
+  }
+  #customers td:last-child {
+    width: 10px;
+    text-align: center;
+  }
+
+
+  #vacunas {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+  }
+  
+  #vacunas td, #vacunas th {
+    border: 0px solid #ddd;
+    padding: 1px;
+  }
+  
+  #vacunas tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #vacunas tr:hover {background-color: #ddd;}
+  
+  #vacunas th {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    text-align: center;
+    background-color: blueviolet;
+    color: white;
+    vertical-align: top;
+
+  }
+
+  #vacunas td:first-child {
+    width: 50px;
+    text-align: left;
+  }
+  #vacunas :last-child {
+    width: 30px;
+    text-align: left;
+  }
+
+
+  .boton-crear-amigo {
+    border: none;
+    font-weight: 600;
+    border-radius: 12px;
+    background-color: #ee5905;
+    width: 250px;
+    height: 30px;
+    overflow: hidden;
+    font-size: 20px;
+    color: #fff;
+}
+
+.tamanio-boton-ver{
+    width: 30px;
+    height: 30px;
+
+}
+
+
+.modal-crear {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 24px;
+    background-color: #fff;
+    width: 560px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.modal-crear-usuario {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 24px;
+    background-color: #fff;
+    overflow: hidden;
+    text-align: center;
+    font-size: 24px;
+    color: #0a0d56;
+    font-family: Poppins;
+}
+
+.modal-titulo {
+    position: absolute;
+    top: 10px;
+    left: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    font-weight: 600;
+}
+
+
+.modal-columna1 {
+    position: absolute;
+    top: 50px;
+    left: 5px;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2px;
+}
+
+.modal-columna2 {
+    position: absolute;
+    top: 50px;
+    left: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2px;
+}
+
+.modal-crear-vacuna {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 24px;
+    background-color: #fff;
+    width: 360px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.modal-crear-texto-vacuna {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 24px;
+    background-color: #fff;
+    overflow: hidden;
+    text-align: center;
+    font-size: 24px;
+    color: #0a0d56;
+    font-family: Poppins;
+}
+
+
+.text-field-modal {
+    align-self: stretch;
+    position: relative;
+    border-radius: 12px;
+    border: 1px solid rgba(102, 102, 102, 0.35);
+    box-sizing: border-box;
+    height: 30px;
+    width: 250px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.select-field1 {
+    align-self: stretch;
+    position: relative;
+    border-radius: 12px;
+    border: 1px solid rgba(102, 102, 102, 0.35);
+    box-sizing: border-box;
+    height: 30px;
+    width: 250px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.text-field-area {
+    align-self: stretch;
+    position: relative;
+    border-radius: 12px;
+    border: 1px solid rgba(102, 102, 102, 0.35);
+    box-sizing: border-box;
+    height: 114px;
+    width: 245px;
+    overflow: hidden;
+    flex-shrink: 0;
+    font-size: 18px;
+    color: #111;
+    overflow: auto;
+}
+
+textarea::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  textarea::-webkit-scrollbar-thumb {
+    background-color: gray;
+  }
+
+  .boton-guardar-amigo {
+    border: none;
+    position: absolute;
+    font-weight: 600;
+    top: 250px;
+    border-radius: 12px;
+    background-color: #ee5905;
+    width: 182px;
+    height: 56px;
+    overflow: hidden;
+    font-size: 20px;
+    color: #fff;
+}
+
+.boton-guardar-vacuna {
+    border: none;
+    position: absolute;
+    font-weight: 600;
+    top: 155px;
+    border-radius: 12px;
+    background-color: #ee5905;
+    width: 182px;
+    height: 56px;
+    overflow: hidden;
+    font-size: 20px;
+    color: #fff;
+}
+.wrapper {
+    position: absolute;
+    top: 95px;
+    left:256px;
+    width: 700px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    grid-auto-rows:  minmax(20px, auto);
+
+  }
+
+  .titulo-vacunas{
+    position: absolute;
+    font-size: 25px;
+    font-weight: 500;
+    color: #0a0d56;
+    text-align: center;
+}
+
+.titulo-datos{
+    position: absolute;
+    top: 180px;
+    left:400px;
+    font-size: 25px;
+    font-weight: 500;
+    color: #0a0d56;
+    text-align: center;
+}
+
+.ubicacion-cuadro-mis-amigos {
+    position: absolute;
+    top: 100px;
+    left: 240px;
+    width: 325px;
+    height: 700px;
+    border-radius: 12px;
+}
+
+.fi-sr-upload-icon {
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    overflow: hidden;
+}

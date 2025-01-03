@@ -1,0 +1,586 @@
+<div [ngClass]="{'hidden': isHome}">
+    <div class="create-an-account">
+
+    </div>
+</div>
+<div [ngClass]="{'hidden': isServiciosPrincipal}">
+    <div class="servicios">
+        <div class="create-an-account">
+            <div class="fondo-pgina-principal-3-parent">
+                <img class="fondo-pgina-principal-3" alt="" src="/assets/img/Fondo página principal 3.png">
+
+                <img class="fondo-pgina-principal-4" alt="" src="/assets/img/Fondo página principal 4.png">
+
+            </div>
+            <div class="fondo-pgina-principal-3-group">
+                <img class="fondo-pgina-principal-31" alt="" src="/assets/img/Fondo página principal 3.png">
+
+                <img class="fondo-pgina-principal-41" alt="" src="/assets/img/Fondo página principal 4.png">
+
+            </div>
+            <div class="servicios1">Servicios</div>
+            <div class="fi-sr-upload">
+            </div>
+            <div class="create-an-account-child">
+            </div>
+            <div class="fi-rr-shopping-cart-parent">
+                <a (click)="serviciosPrincipalSeleccion()"> <img class="fi-rr-shopping-cart-icon" alt="" src="/assets/img/fi-rr-shopping-cart_activo.png"></a>
+
+                <img class="fi-rr-comment-info-icon" alt="" src="/assets/img/fi-rr-comment-info_inactivo.png">
+
+                <img class="fi-rr-flower-icon" alt="" src="/assets/img/fi-rr-flower_inactivo.png">
+
+                <img class="fi-rr-sign-out-alt-icon" alt="" src="/assets/img/fi-rr-sign-out-alt_inactivo.png">
+
+                <img class="fi-rr-bell-icon" alt="" src="/assets/img/fi-rr-bell_inactivo.png">
+
+                <a (click)="membresiaSeleccion()"> <img class="fi-rr-crown-icon" alt="" src="/assets/img/fi-rr-crown_inactivo.png"></a>
+
+                <img class="fi-rr-home-icon" alt="" src="/assets/img/fi-rr-home_inactivo.png">
+
+            </div>
+            <img class="create-an-account-item" alt="" src="/assets/img/Line 1.png">
+
+            <img class="create-an-account-inner" alt="" src="/assets/img/Line 5.png">
+
+            <div class="rectangle-parent">
+                <div class="group-child">
+                </div>
+                <div (click)="serviciosAgregarSeleccion()" onkeypress="" class="agregar-un-nuevo">Agregar un nuevo servicio</div>
+                <a (click)="serviciosAgregarSeleccion()"> <img class="group-item" alt="" src="/assets/img/Group 52.png"></a>
+
+            </div>
+            <div class="fecha">Fecha</div>
+            <div class="listbox-component">
+                <div class="listbox-title">
+                    <div class="tipo-de-servicio">Tipo de servicio</div>
+                </div>
+                <div class="listbox-main">
+                    <div class="listboxbg">
+                    </div>
+                    <img class="chevron-icon" alt="" src="/assets/img/Chevron.png">
+
+                    <div class="placeholder-text">
+                        <select  class="text-field3 email-membresia" [(ngModel)]="this.idTipoServicio" name="tiposervicio" #tiposervicio="ngModel">
+                            <option *ngFor="let servicio of this.duenioColegioInfo.tipoServicios"  [ngValue]="servicio.id">{{servicio.nombre}} </option>
+                          </select>          
+                    </div>
+                </div>
+
+            </div>
+            <div class="calendario">
+                <img class="flecha-icon" alt="" src="/assets/img/FlechaIzq.png">
+
+                <div class="december-wrapper">
+                    <div class="december-wrapper">
+                        <div class="december">15, JUNIO, 2024</div>
+                    </div>
+                </div>
+                <img class="flecha-icon" alt="" src="/assets/img/FlechaDer.png">
+
+            </div>
+            <img class="line-icon" alt="" src="/assets/img/Line 3.png">
+
+            <div class="text-field">
+                <div class="flag-dropdown-parent">
+                    <div class="flag-dropdown">
+                    </div>
+                    <div class="inputs">
+                        <div class="revisar-solicitudes">Revisar Solicitudes</div>
+                        <div class="inputs-child">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nombre-del-servicio">Nombre del servicio</div>
+            <div class="tipo-de-servicio1">Tipo de servicio</div>
+            <img class="fi-sr-paw-icon" alt="" src="/assets/img/fi-sr-paw.png">
+
+            <a (click)="serviciosSecundariosSeleccion()"> <img class="fi-br-align-justify-icon" alt="" src="/assets/img/fi-br-align-justify.png"> </a>
+
+        </div>
+    </div>
+</div>
+
+<div [ngClass]="{'hidden': isServiciosSecundario}">
+    <div class="servicios-actuales">
+        <div class="create-an-account">
+            <div class="fondo-pgina-principal-3-parent">
+                <img class="fondo-pgina-principal-3" alt="" src="/assets/img/Fondo página principal 3.png">
+
+                <img class="fondo-pgina-principal-4" alt="" src="/assets/img/Fondo página principal 4.png">
+
+            </div>
+            <div class="fondo-pgina-principal-3-group">
+                <img class="fondo-pgina-principal-31" alt="" src="/assets/img/Fondo página principal 3.png">
+
+                <img class="fondo-pgina-principal-41" alt="" src="/assets/img/Fondo página principal 4.png">
+
+            </div>
+            <div class="servicios-secundarios">Servicios</div>
+            <div class="servicios-actuales1">Servicios Actuales</div>
+            <div class="fi-sr-upload">
+            </div>
+            <div class="create-an-account-child">
+            </div>
+            <div class="fi-rr-shopping-cart-parent">
+                <a (click)="serviciosPrincipalSeleccion()"> <img class="fi-rr-shopping-cart-icon" alt="" src="/assets/img/fi-rr-shopping-cart_activo.png"></a>
+
+                <img class="fi-rr-comment-info-icon" alt="" src="/assets/img/fi-rr-comment-info_inactivo.png">
+
+                <img class="fi-rr-flower-icon" alt="" src="/assets/img/fi-rr-flower_inactivo.png">
+
+                <img class="fi-rr-sign-out-alt-icon" alt="" src="/assets/img/fi-rr-sign-out-alt_inactivo.png">
+
+                <img class="fi-rr-bell-icon" alt="" src="/assets/img/fi-rr-bell_inactivo.png">
+
+                <a (click)="membresiaSeleccion()"> <img class="fi-rr-crown-icon" alt="" src="/assets/img/fi-rr-crown_inactivo.png"></a>
+
+                <img class="fi-rr-home-icon" alt="" src="/assets/img/fi-rr-home_inactivo.png">
+
+            </div>
+            <img class="create-an-account-item-secundario" alt="" src="/assets/img/Line 1.png">
+
+            <img class="create-an-account-inner-secundario" alt="" src="/assets/img/Line 6.png">
+
+            <img class="line-icon-secundario" alt="" src="/assets/img/Line 5.png">
+
+            <div class="rectangle-parent-secundario">
+                <div class="group-child">
+                </div>
+                <div (click)="serviciosAgregarSeleccion()" onkeypress="" class="agregar-un-nuevo">Agregar un nuevo servicio</div>
+                <a (click)="serviciosAgregarSeleccion()"><img class="group-item" alt="" src="/assets/img/Group 52.png"></a>
+
+            </div>
+            <div class="fecha">Fecha </div>
+            <div class="listbox-component">
+                <div class="listbox-title">
+                    <div class="tipo-de-servicio">Tipo de servicio</div>
+                </div>
+                <div class="listbox-main">
+                    <div class="listboxbg">
+                    </div>
+                    <img class="chevron-icon" alt="" src="/assets/img/Chevron.png">
+
+                    <div class="placeholder-text">
+                        <select  class="text-field3 email-membresia" [(ngModel)]="this.idTipoServicio" name="tiposervicio" #tiposervicio="ngModel">
+                            <option *ngFor="let servicio of this.duenioColegioInfo.tipoServicios"  [ngValue]="servicio.id">{{servicio.nombre}} </option>
+                          </select>         
+                    </div>
+                </div>
+            </div>
+            <div class="calendario">
+                <img class="flecha-icon" alt="" src="/assets/img/FlechaIzq.png">
+
+                <div class="fecha1">
+                    <div class="december-wrapper">
+                        <div class="december">15, JUNIO, 2024</div>
+                    </div>
+                    <div class="december-wrapper">
+                        <div class="december">
+                        </div>
+                    </div>
+                </div>
+                <img class="flecha-icon" alt="" src="/assets/img/FlechaDer.png">
+
+            </div>
+            <img class="create-an-account-child1" alt="" src="/assets/img/Line 3.png">
+
+            <img class="create-an-account-child2" alt="" src="/assets/img/Line7.png">
+
+            <div class="nombre-del-servicio-secundario">Nombre del servicio</div>
+            <div class="tipo-de-servicio1-secundario">Tipo de servicio</div>
+            <div class="tipo-de-servicio2">Tipo de servicio</div>
+            <div class="corte-y-estilo">Corte y estilo profesional para que tu perro luzca impecable y se sienta cómodo. Incluye baño, cepillado, y cuidado de uñas.</div>
+            <div class="group-div">
+                <div class="ms-informacin-parent">
+                    <div class="ms-informacin">Más información</div>
+                    <img class="vector-icon" alt="" src="/assets/img/Vector.png">
+
+                </div>
+            </div>
+            <div class="text-field">
+                <div class="flag-dropdown-parent">
+                    <div class="flag-dropdown">
+                    </div>
+                    <div class="inputs">
+                        <div class="revisar-solicitudes">Revisar Solicitudes</div>
+                        <div class="inputs-child">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img class="fi-sr-paw-icon-secundario" alt="" src="/assets/img/fi-sr-paw.png">
+
+            <div class="nombre-del-servicio1">Nombre del servicio</div>
+            <img class="fi-sr-paw-icon1" alt="" src="/assets/img/fi-sr-paw.png">
+
+            <img class="fi-sr-pencil-icon" alt="" src="/assets/img/fi-sr-pencil.png">
+
+            <a (click)="serviciosPrincipalSeleccion()"> <img class="fi-br-align-justify-icon" alt="" src="/assets/img/fi-br-align-justify.png"></a>
+
+            <img class="fi-sr-bell-icon" alt="" src="/assets/img/fi-sr-bell.png">
+
+        </div>
+    </div>
+</div>
+
+<div [ngClass]="{'hidden': isServiciosAgregar}">
+    <div class="agregar-servicio">
+        <div class="create-an-account">
+            <div class="fondo-pgina-principal-4-parent">
+                <img class="fondo-pgina-principal-4" alt="" src="/assets/img/Fondo página principal 4.png">
+
+                <img class="fondo-pgina-principal-3" alt="" src="/assets/img/Fondo página principal 3.png">
+
+            </div>
+            <div class="fondo-pgina-principal-3-parent">
+                <img class="fondo-pgina-principal-31" alt="" src="/assets/img/Fondo página principal 3.png">
+
+                <img class="fondo-pgina-principal-41" alt="" src="/assets/img/Fondo página principal 4.png">
+
+            </div>
+            <div class="agregar-servicio1">Agregar Servicio</div>
+            <a (click)="serviciosPrincipalSeleccion()"> <img class="fi-br-align-justify-icon-servicio-agregar" alt="" src="/assets/img/fi-br-align-justify.png"></a>
+
+            <div class="text-field-servicio-agregar">
+                <div class="flag-dropdown-parent-servicio-agregar">
+                    <div class="flag-dropdown">
+                    </div>
+                    <div class="inputs">
+                        <div class="guardar-cambios">Guardar Cambios</div>
+                        <div class="inputs-child">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="fi-sr-upload">
+            </div>
+            <div class="create-an-account-child">
+            </div>
+            <div class="fi-rr-shopping-cart-parent">
+                <a (click)="serviciosPrincipalSeleccion()"> <img class="fi-rr-shopping-cart-icon" alt="" src="/assets/img/fi-rr-shopping-cart_activo.png"></a>
+
+                <img class="fi-rr-comment-info-icon" alt="" src="/assets/img/fi-rr-comment-info_inactivo.png">
+
+                <img class="fi-rr-flower-icon" alt="" src="/assets/img/fi-rr-flower_inactivo.png">
+
+                <img class="fi-rr-sign-out-alt-icon" alt="" src="/assets/img/fi-rr-sign-out-alt_inactivo.png">
+
+                <img class="fi-rr-bell-icon" alt="" src="/assets/img/fi-rr-bell_inactivo.png">
+
+                <a (click)="membresiaSeleccion()"><img class="fi-rr-crown-icon" alt="" src="/assets/img/fi-rr-crown_inactivo.png"></a>
+
+                <img class="fi-rr-home-icon" alt="" src="/assets/img/fi-rr-home_inactivo.png">
+
+            </div>
+            <img class="create-an-account-item-servicio-agregar" alt="" src="/assets/img/Group 63.png">
+
+            <div class="email">
+                <div class="label">Descripción del servicio*</div>
+                <div class="text-field3">
+                    <div class="inputs-wrapper">
+                        <div class="inputs">
+                            <div class="label">Agrega una breve descripción sobre lo que ofrece este servicio.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="email1">
+                <div class="label">Valor del servicio*</div>
+                <div class="text-field3">
+                    <div class="inputs-wrapper">
+                        <div class="inputs">
+                            <div class="label">Ingresa el costo del servicio que estás ofreciendo.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="email2">
+                <div class="label">Nombre del servicio*</div>
+            </div>
+            <div class="email2-ns">
+                <input type="text" name="correo" size="56"  class="text-field3 inputs-wrapper"  [(ngModel)]="duenioColegioInfo.email" #correo="ngModel"
+            required>
+            </div>
+            
+            <div class="listbox-component-servicio-agregar">
+                <div class="listbox-title">
+                    <div class="tip-del-servicio">Tipo de servicio*</div>
+                </div>
+                <div class="listbox-main-servicio-agregar">
+                    <div class="listboxbg">
+                    </div>
+                    <img class="chevron-icon" alt="" src="/assets/img/Chevron.png">
+
+                    <select  class="text-field3 email-membresia" [(ngModel)]="this.idTipoServicio" name="tiposervicio" #tiposervicio="ngModel">
+                        <option *ngFor="let servicio of this.duenioColegioInfo.tipoServicios"  [ngValue]="servicio.id">{{servicio.nombre}} </option>
+                      </select>  
+                    
+                </div>
+            </div>
+            <div class="rectangle-parent-servicio-agregar">
+                <div class="group-child">
+                </div>
+                <div class="crear-una-nueva">Crear una nueva categoría</div>
+                
+
+            </div>
+            <div class="text-field-parent">
+                <div class="text-field6">
+                    <div class="flag-dropdown-parent">
+                        <div class="flag-dropdown">
+                        </div>
+                        <div class="inputs6">
+                            <div class="inputs-child">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="email3">
+                    <div class="label">Puntos del servicio*</div>
+                </div>
+                <div class="label-parent">
+                    <div class="label4">05</div>
+                    <div class="fi-br-minus-parent">
+                        <img class="fi-br-minus-icon" alt="" src="/assets/img/fi-br-minus.png">
+
+                        <img class="fi-br-plus-icon" alt="" src="/assets/img/fi-br-plus.png">
+
+                    </div>
+                </div>
+            </div>
+            <i class="ingresa-la-cantidad">Ingresa la cantidad de puntos que otorga este servicio. Estos puntos podrán ser utilizados por los clientes para obtener descuentos, precios especiales o servicios gratuitos en el futuro.</i>
+            <i class="ejemplo-veterinaria-guarderi">Ejemplo: Veterinaria, Guarderia, Comida, etc.</i>
+            <div class="text-field-group">
+
+
+
+                <div [ngClass]="{'text-field7-inactivo':isJuevesInactivo ,'text-field7-activo': isJuevesActivo  } " (click)="this.habilitarDiaJueves(isJuevesInactivo,isJuevesActivo)" onkeypress="">
+                    <div class="inputs-parent">
+                        <div class="inputs7">
+                            <div class="jueves">Jueves</div>
+                            <div class="inputs-child">
+                            </div>
+                        </div>
+                        <div class="flag-dropdown">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div [ngClass]="{'text-field8-inactivo':isViernesInactivo ,'text-field8-activo': isViernesActivo  } " (click)="this.habilitarDiaViernes(isViernesInactivo,isViernesActivo)" onkeypress="">
+                    <div class="inputs-parent">
+                        <div class="inputs7">
+                            <div class="jueves">Viernes</div>
+                            <div class="inputs-child">
+                            </div>
+                        </div>
+                        <div class="flag-dropdown">
+                        </div>
+                    </div>
+                </div>
+                <div [ngClass]="{'text-field9-inactivo':isSabadoInactivo ,'text-field9-activo': isSabadoActivo  } " (click)="this.habilitarDiaSabado(isSabadoInactivo,isSabadoActivo)" onkeypress="">
+                    <div class="inputs-parent">
+                        <div class="inputs7">
+                            <div class="jueves">Sábado</div>
+                            <div class="inputs-child">
+                            </div>
+                        </div>
+                        <div class="flag-dropdown">
+                        </div>
+                    </div>
+                </div>
+                <div [ngClass]="{'text-field10-inactivo':isDomingoInactivo ,'text-field10-activo': isDomingoActivo  } " (click)="this.habilitarDiaDomingo(isDomingoInactivo,isDomingoActivo)" onkeypress="">
+                    <div class="inputs-parent">
+                        <div class="inputs7">
+                            <div class="jueves">Domingo</div>
+                            <div class="inputs-child">
+                            </div>
+                        </div>
+                        <div class="flag-dropdown">
+                        </div>
+                    </div>
+                </div>
+                <div [ngClass]="{'text-field11-inactivo':isMiercolesInactivo ,'text-field11-activo': isMiercolesActivo  } " (click)="this.habilitarDiaMiercoles(isMiercolesInactivo,isMiercolesActivo)" onkeypress="">
+                    <div class="inputs-parent">
+                        <div class="inputs7">
+                            <div class="jueves">Miércoles</div>
+                            <div class="inputs-child">
+                            </div>
+                        </div>
+                        <div class="flag-dropdown">
+                        </div>
+                    </div>
+                </div>
+                <div [ngClass]="{'text-field12-inactivo':isLunesInactivo ,'text-field12-activo': isLunesActivo  } " (click)="this.habilitarDiaLunes(isLunesInactivo,isLunesActivo)" onkeypress="">
+                    <div class="inputs-parent">
+                        <div class="inputs7">
+                            <div class="jueves">Lunes</div>
+                            <div class="inputs-child">
+                            </div>
+                        </div>
+                        <div class="flag-dropdown">
+                        </div>
+                    </div>
+                </div>
+                <div [ngClass]="{'text-field13-inactivo':isMartesInactivo ,'text-field13-activo': isMartesActivo  } " (click)="this.habilitarDiaMartes(isMartesInactivo,isMartesActivo)" onkeypress="">
+                    <div class="inputs-parent">
+                        <div class="inputs7">
+                            <div class="jueves">Martes</div>
+                            <div class="inputs-child">
+                            </div>
+                        </div>
+                        <div class="flag-dropdown">
+                        </div>
+                    </div>
+                </div>
+                <div class="label5">Días disponibles*</div>
+                <div class="inputs14">
+                    <i class="selecciona-los-das">Selecciona los días en los que el servicio estará disponible.</i>
+                    <div class="inputs-child">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div [ngClass]="{'hidden': isMembresia}">
+    <div class="membresa-membresia">
+        <div class="mask-group-memnresia">
+            <div class="membresia-membresia">
+                <div class="create-an-account">
+                    <div class="fondo-pgina-principal-4-parent">
+                        <img class="fondo-pgina-principal-4" alt="" src="/assets/img/Fondo página principal 4.png">
+
+                        <img class="fondo-pgina-principal-3" alt="" src="/assets/img/Fondo página principal 3.png">
+
+                    </div>
+                    <div class="fondo-pgina-principal-3-parent">
+                        <img class="fondo-pgina-principal-31" alt="" src="/assets/img/Fondo página principal 3.png">
+
+                        <img class="fondo-pgina-principal-41" alt="" src="/assets/img/Fondo página principal 4.png">
+
+                    </div>
+
+
+                    <div class="membresa1">Membresía</div>
+                    <div class="terranova">{{duenioColegioInfo.nombreMembresia}} </div>
+                    <div class="informacin-del-plan">Información del plan</div>
+                    <div class="premium">{{duenioColegioInfo.descripcionTipoMembresia}}</div>
+
+                    <div class="text-field1-membresia">
+                        <div class="flag-dropdown-parent">
+                            <div class="flag-dropdown">
+                            </div>
+                            <div class="inputs">
+                                <div class="cambiar-membresa">Cambiar Membresía</div>
+                                <div class="inputs-child">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-field2">
+                        <div class="flag-dropdown-container">
+                            <div class="flag-dropdown">
+                            </div>
+                            <div class="inputs-membresia">
+
+                                <div [ngClass]="{'button-guardar-perfil sign-up-wrapper-naranja-perfil': btnGuardarMembNaranja,'button-gris-perfil sign-up-wrapper-gris-perfil': btnGuardarMembGris}" (click)="saveDuenioColegioMembresia()" onkeypress="">Guardar Cambios</div>
+                                <div class="inputs-child">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="name">
+
+                        <div class="email-membresia">
+                            <div class="label-membresia">correo electronico</div>
+                            <input type="text" name="correo" size="35" [disabled]="isCorreo" (blur)="habilitarDeshabilitarBtoGuardarMembresia()" class="text-field3 inputs-wrapper-correo inputs-membresia" (blur)="habilitaCampoCorreo()" [(ngModel)]="duenioColegioInfo.email" #correo="ngModel"
+                                required>
+                        </div>
+                        <a (click)="habilitaEditarCorreo()"> <img class="fi-sr-pencil-icon-membresia" alt="" src="/assets/img/fi-sr-pencil.png"> </a>
+
+                        <div class="email1-membresia">
+                            <div class="label-membresia">Contraseña</div>
+                            <input [type]="typeClave" name="clave" size="35" [disabled]="isClave" (blur)="habilitarDeshabilitarBtoGuardarMembresia()" class="text-field3 inputs-wrapper-clave inputs-membresia" (blur)="habilitaCampoClave()" [(ngModel)]="duenioColegioInfo.clave" #clave="ngModel"
+                                required>
+
+                        </div>
+                        <a (click)="habilitaEditarClave()"> <img class="fi-sr-pencil-icon-membresia" alt="" src="/assets/img/fi-sr-pencil.png"></a>
+
+                        <div class="email2-membresia">
+                            <div class="label-membresia">Teléfono</div>
+                            <input type="telefono" name="telefono" size="35" [disabled]="isTelefono" (blur)="habilitarDeshabilitarBtoGuardarMembresia()" class="text-field3 inputs-wrapper-telefono inputs-membresia" (blur)="habilitaCampoTelefono()" [(ngModel)]="duenioColegioInfo.noContacto"
+                                #clave="ngModel" required>
+                        </div>
+                        <a (click)="habilitaEditarTelefono()"> <img class="fi-sr-pencil-icon-membresia" alt="" src="/assets/img/fi-sr-pencil.png"></a>
+                    </div>
+
+                    <div class="fi-rr-shopping-cart-parent">
+                        <a (click)="serviciosPrincipalSeleccion()"> <img class="fi-rr-shopping-cart-icon" alt="" src="/assets/img/fi-rr-shopping-cart_inactivo.png"></a>
+
+                        <img class="fi-rr-comment-info-icon" alt="" src="/assets/img/fi-rr-comment-info_inactivo.png">
+
+                        <img class="fi-rr-flower-icon" alt="" src="/assets/img/fi-rr-flower_inactivo.png">
+
+                        <img class="fi-rr-sign-out-alt-icon" alt="" src="/assets/img/fi-rr-sign-out-alt_inactivo.png">
+
+                        <img class="fi-rr-bell-icon" alt="" src="/assets/img/fi-rr-bell_inactivo.png">
+
+                        <a (click)="membresiaSeleccion()"> <img class="fi-rr-crown-icon" alt="" src="/assets/img/fi-rr-crown_activo.png"></a>
+
+                        <img class="fi-rr-home-icon" alt="" src="/assets/img/fi-rr-home_inactivo.png">
+
+                    </div>
+
+                    <img class="create-an-account-item-membresia" alt="" src="/assets/img/Rectangle 5.png">
+
+                    <div class="precio-mensual-38900-wrapper">
+                        <div class="precio-mensual-38900">Precio Mensual: {{duenioColegioInfo.valorMembresia}}</div>
+                    </div>
+                    <img class="fi-sr-paw-icon-membresia" alt="" src="/assets/img/fi-sr-paw.png">
+
+                    <div class="cambiar-mtodo-de"></div>
+                    <div class="text-field6-membresia">
+                        <div class="flag-dropdown-parent">
+                            <div class="flag-dropdown">
+                            </div>
+                            <div class="inputs">
+                                <div class="cambiar-membresa">Cancelar Membresía</div>
+                                <div class="inputs-child">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="create-an-account-child1-membresia">
+                    </div>
+                    <div class="create-an-account-child2-membresia">
+                    </div>
+                    <div class="tu-prxima-fecha">Tu próxima fecha de facturación es el 08 de Junio de 2024</div>
+                    <div class="lorem-ipsum-dolor-container">
+                        <span class="lorem-ipsum-dolor-container1">
+                                      <p class="blank-line">&nbsp;</p>
+                                      <ul class="lorem-ipsum-dolor-sit-amet-qu">
+                                            <li class="lorem-ipsum-dolor-sit-amet-qu1">
+                                                  <span class="lorem-ipsum-dolor">{{duenioColegioInfo.descripcionMembresia1}}</span>
+                        </li>
+                        </ul>
+                        <p class="blank-line1">&nbsp;</p>
+                        <ul class="lorem-ipsum-dolor-sit-amet-qu">
+                            <li>
+                                <span class="lorem-ipsum-dolor">{{duenioColegioInfo.descripcionMembresia2}}</span>
+                            </li>
+                        </ul>
+                        </span>
+                    </div>
+                </div>
+                <div class="image-1">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

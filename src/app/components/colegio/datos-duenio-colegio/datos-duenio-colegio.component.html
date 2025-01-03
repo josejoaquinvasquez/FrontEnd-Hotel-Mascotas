@@ -1,0 +1,175 @@
+<div class="servicios">
+    <div class="create-an-account">
+        <div class="fondo-pgina-principal-3-parent">
+            <img class="fondo-pgina-principal-3" alt="" src="/assets/img/Fondo página principal 3.png">
+            <img class="fondo-pgina-principal-4" alt="" src="/assets/img/Fondo página principal 4.png">
+        </div>
+        <div class="fondo-pgina-principal-3-group">
+            <img class="fondo-pgina-principal-31" alt="" src="/assets/img/Fondo página principal 3.png">
+            <img class="fondo-pgina-principal-41" alt="" src="/assets/img/Fondo página principal 4.png">
+        </div>
+
+        <div class="fi-rr-shopping-cart-parent">
+            <a (click)="homeSeleccion()"> 
+                <img class="fi-rr-home-icon" alt="" src="/assets/img/fi-rr-home_activo.png" *ngIf="!isHome"> 
+                <img class="fi-rr-home-icon" alt="" src="/assets/img/fi-rr-home_inactivo.png" *ngIf="isHome"> 
+            </a>
+            <a (click)="clientesSeleccion()"> 
+                <img class="fi-rr-crown-icon" alt="" src="/assets/img/fi-rr-crown_activo.png" *ngIf="!isClientes">
+                <img class="fi-rr-crown-icon" alt="" src="/assets/img/fi-rr-crown_inactivo.png" *ngIf="isClientes">
+            </a>    
+
+            <a (click)="agregarClienteSeleccion()"> 
+                <img class="fi-rr-flower-icon" alt="" src="/assets/img/fi-rr-flower_activo.png" *ngIf="!isAgregarClientes">
+                <img class="fi-rr-flower-icon" alt="" src="/assets/img/fi-rr-flower_inactivo.png" *ngIf="isAgregarClientes">
+            </a>    
+            
+            <a (click)="salirSeleccion()"> 
+                <img class="fi-rr-sign-out-alt-icon" alt="" src="/assets/img/fi-rr-sign-out-alt_activo.png" *ngIf="!isSalir">
+                <img class="fi-rr-sign-out-alt-icon" alt="" src="/assets/img/fi-rr-sign-out-alt_inactivo.png" *ngIf="isSalir">
+            </a>            
+        </div>
+
+        <div [ngClass]="{'hidden': isHome}">
+            <img  [src]="duenioColegioInfo.urlImagen" alt="" class="ellipse-div-perfil">
+            <div class="talento-canes-perfil">{{duenioColegioInfo.razonSocial}} </div>
+
+            <input hide id="btnOriginal" type="file" accept="image/*" (change)="upload($event,tipoLogo)" class="hidden">
+            <button class="boton-cambiar-foto" onclick="document.getElementById('btnOriginal').click();">Cambiar foto </button>
+           
+
+            <div class="email-perfil">
+                <div class="label-perfil">Descripción del negocio*</div>
+                <textarea name="text" name="descripcionnegocio" class="text-field-area"maxlength="500" placeholder="Introduce descripción del colegio"  
+                    (onfocus)="habilitarDeshabilitarBtoGuardarDuenio()" [(ngModel)]="duenioColegioInfo.descripcionNegocio" #descripcionnegocio="ngModel" required>
+                </textarea>
+
+                <div class="label-perfil">No Documento / Nit*</div>
+                <input type="text" name="nit" class="text-field1" size="56" placeholder="Introduce el nit o documento"  
+                    (blur)="habilitarDeshabilitarBtoGuardarDuenio()" [(ngModel)]="duenioColegioInfo.noDocumento" #nit="ngModel" required>
+
+                <div class="label-perfil">No Contacto*</div>
+                <input type="text" name="contacto" class="text-field1" size="56" placeholder="Introduce Número contacto"
+                    (blur)="habilitarDeshabilitarBtoGuardarDuenio()" [(ngModel)]="duenioColegioInfo.noContacto" #contacto="ngModel" required>
+
+                <div class="label-perfil">Contraseña*</div>
+                <input type="text" name="clave" class="text-field1" size="56" 
+                    (blur)="habilitarDeshabilitarBtoGuardarDuenio()"[(ngModel)]="duenioColegioInfo.clave" #clave="ngModel" required>
+
+                <div [ngClass]="{'hidden': btnCrearNaranja}">
+                    <div class="boton-guardar-perfil"(click)="saveInformacionDuenioColegio()" onkeypress="">Guardar</div>
+                    
+                </div>
+
+                <div [ngClass]="{'hidden': btnCrearGris}">
+                    <div class="boton-gris-perfil"> Guardar</div>
+                </div>
+
+            </div>
+
+            <div class="nombre-perfil">
+                <div class="label-perfil">Nombre*</div>
+                <input type="text" name="nombre" class="text-field1" size="56"  placeholder="Introduce el nombre"  
+                    (blur)="habilitarDeshabilitarBtoGuardarDuenio()" [(ngModel)]="duenioColegioInfo.nombre" #nombre="ngModel" required>
+
+                <div class="label-perfil">Apellido*</div>
+                <input type="text" name="apellido" class="text-field1" size="56" placeholder="Introduce el apellido"  
+                    (blur)="habilitarDeshabilitarBtoGuardarDuenio()" [(ngModel)]="duenioColegioInfo.apellido" #apellido="ngModel" required>
+                
+                <div class="label-perfil">Razón Social*</div>
+                <input type="text" name="razonsocial" class="text-field1" size="56" placeholder="Introduce razón social"  
+                    (blur)="habilitarDeshabilitarBtoGuardarDuenio()" [(ngModel)]="duenioColegioInfo.razonSocial" #razonsocial="ngModel" required>
+
+                <div class="label-perfil">Correo Electronico*</div>
+                <input type="text" name="correo" class="text-field1" size="56" placeholder="Introduce el correo electronico" 
+                    (blur)="habilitarDeshabilitarBtoGuardarDuenio()" [(ngModel)]="duenioColegioInfo.email" #correo="ngModel" required>
+            </div>   
+        </div>
+        
+        
+        <div [ngClass]="{'hidden': isClientes}">       
+            <div class="talento-canes-perfil">CLIENTES</div>
+            <div class="container">    
+                <div class="box">
+                    <div class="box-row">
+                        <div class="box-cell box2">
+                            <input type="text" class="text-field1" size="56" [(ngModel)] ="filter" placeholder="Filtrar Por nombre, apellido o # Contacto" >
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapper-duenio-colegio">
+                <div>
+                    <img alt="" src="/assets/img/Line 1.png" width="400px">
+               
+                    <br>
+                    <table  id="customers">  
+                        <tr>
+                          <th> Nombre </th>
+                          <th>No Contacto </th>
+                          <th>Estado </th>
+                          <th>Acción </th>
+                        </tr>
+                        <tr *ngFor="let dm of listaDuenioMascotas | nombreDuenioMascota:filter">
+                          <td>{{dm.nombre}} {{dm.apellido}}</td>
+                          <td>{{dm.noContacto}}</td>
+                          <td *ngIf="dm.estado=='A'"> <img alt="" src="/assets/img/btnActivo.png"></td>
+                          <td *ngIf="dm.estado=='I'"> <img alt="" src="/assets/img/btnInactivo.png"></td>
+                          <td><a (click)="asignarInfoDuenioMascota(dm)"> <img alt="" src="/assets/img/btnEditar.png"></a></td>
+                        </tr>
+                      </table>
+                </div>
+               
+            </div>
+            
+        </div>
+        
+        <div [ngClass]="{'hidden': isAgregarClientes}">
+            <div *ngIf="isNuevo" class="talento-canes-perfil"> REGISTRAR CLIENTE</div>
+            <div *ngIf="!isNuevo" class="talento-canes-perfil"> EDITAR CLIENTE</div>
+            <div class="email-perfil">
+                
+                <div class="label-perfil">No Documento</div>
+                <input type="text"  class="text-field1" size="56" placeholder="Introduce el número documento" 
+                    (blur)="habilitarDeshBtoGuardarDMascota()" [(ngModel)]="infoDuenioPets.noDocumento" required>
+    
+                <div class="label-perfil">Nombre*</div>
+                <input type="text" name="nombredmascota" class="text-field1" size="56"  placeholder="Introduce el nombre"
+                    (blur)="habilitarDeshBtoGuardarDMascota()" [(ngModel)]="infoDuenioPets.nombre" #nombredmascota="ngModel" required>
+
+                <div class="label-perfil">Apellido*</div>
+                <input type="text" name="apellidodmascota" class="text-field1" size="56" placeholder="Introduce el apellido"
+                    (blur)="habilitarDeshBtoGuardarDMascota()" [(ngModel)]="infoDuenioPets.apellido" #apellidodmascota="ngModel" required>
+
+                <div [ngClass]="{'hidden': btnCrearNaranjaDM}">
+                    <div class="boton-guardar-perfil"(click)="saveInformacionDuenioMascota()" onkeypress="">Guardar</div>
+                    
+                </div>
+
+                <div [ngClass]="{'hidden': btnCrearGrisDM}">
+                    <div class="boton-gris-perfil"> Guardar</div>
+                </div>
+              
+            </div>
+
+            <div class="nombre-perfil">
+             
+                <div class="label-perfil">No Contacto*</div>
+                <input type="text" name="contactodmascota" class="text-field1" size="56" placeholder="Introduce Número contacto"
+                (blur)="habilitarDeshBtoGuardarDMascota()" [(ngModel)]="infoDuenioPets.noContacto" #contactodmascota="ngModel" required>
+
+                <div class="label-perfil">Correo Electronico*</div>
+                <input type="text" name="correodmascota" class="text-field1" size="56" placeholder="Introduce el correo electronico"
+                (blur)="habilitarDeshBtoGuardarDMascota()" [(ngModel)]="infoDuenioPets.email" #correodmascota="ngModel" required>
+
+            </div>   
+        </div>
+
+        <div [ngClass]="{'hidden': isSalir}"> 
+               
+        </div>
+    </div>
+</div>
+
+

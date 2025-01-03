@@ -1,0 +1,534 @@
+@media (min-width: 320px) and (max-width: 1390px) {
+    .image-icon {
+        width: 475px;
+        position: relative;
+        border-radius: 0px 24px 24px 0px;
+        height: 1053px;
+        overflow: hidden;
+        flex-shrink: 0;
+        object-fit: cover;
+    }
+    .fondo-pgina-principal-3 {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 1005px;
+        height: 514.3px;
+        object-fit: cover;
+        opacity: 0.5;
+    }
+    .fondo-pgina-principal-4 {
+        position: absolute;
+        top: 514.28px;
+        left: 0px;
+        width: 1005px;
+        height: 538.7px;
+        object-fit: cover;
+        opacity: 0.5;
+    }
+    .fondo-pgina-principal-3-parent {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 1005px;
+        height: 1053px;
+    }
+    .crea-tu-cuenta {
+        position: relative;
+        font-weight: 500;
+        color: #0a0d56;
+        width: 288px;
+        height: 53px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Poppins;
+        font-size: 35px;
+        line-height: 52.5px;
+        text-align: center;
+    }
+    .selecciona-si-eres {
+        width: 604px;
+        position: relative;
+        font-size: 12px;
+        font-weight: 500;
+        color: #454545;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        flex-shrink: 0;
+        line-height: 18px;
+        text-align: center;
+        top: -10px;
+    }
+    .sign-up {
+        position: absolute;
+        top: calc(50% - 13px);
+        left: calc(50% - 72px);
+    }
+    .tabs-nav {
+        width: 302px;
+        position: relative;
+        background-color: rgba(17, 17, 17, 0.25);
+        height: 56px;
+        overflow: hidden;
+        flex-shrink: 0;
+    }
+    .sign-up1 {
+        position: absolute;
+        top: calc(50% - 13px);
+        left: calc(50% - 75px);
+    }
+    .tabs-nav1 {
+        width: 262px;
+        position: relative;
+        background-color: #111;
+        height: 56px;
+        overflow: hidden;
+        flex-shrink: 0;
+    }
+    .tabs-nav-parent {
+        width: 564px;
+        border-radius: 12px;
+        overflow: hidden;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        font-size: 18px;
+        color: #fff;
+    }
+    .label {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    .label-wrapper {
+        align-self: stretch;
+        position: relative;
+        height: 27px;
+    }
+    .text-field1 {
+        align-self: stretch;
+        position: relative;
+        border-radius: 12px;
+        border: 1px solid rgba(102, 102, 102, 0.35);
+        box-sizing: border-box;
+        height: 56px;
+        overflow: hidden;
+        flex-shrink: 0;
+    }
+    .text-field {
+        width: 261px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 4px;
+    }
+    .text-field2 {
+        width: 247px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 4px;
+    }
+    .name {
+        width: 524px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 16px;
+        text-align: left;
+        font-size: 16px;
+    }
+    .span {
+        font-size: 18px;
+    }
+    .div {
+        position: relative;
+    }
+    .inputs {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .inputs-wrapper {
+        position: absolute;
+        top: 10px;
+        left: 5px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .text-field4 {
+        align-self: stretch;
+        position: relative;
+        border-radius: 12px;
+        border: 1px solid rgba(102, 102, 102, 0.35);
+        box-sizing: border-box;
+        height: 56px;
+        overflow: hidden;
+        flex-shrink: 0;
+        font-size: 12px;
+        color: #828282;
+    }
+    .email {
+        width: 528px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 4px;
+        font-size: 16px;
+    }
+    .icon {
+        position: absolute;
+        top: 3px;
+        right: 10px;
+        width: 24px;
+        height: 24px;
+        overflow: hidden;
+    }
+    .hide {
+        position: absolute;
+        top: 0px;
+        right: -30px;
+    }
+    .password-hide-see {
+        position: absolute;
+        top: 0px;
+        right: 8.86px;
+        width: 73px;
+        height: 27px;
+        text-align: right;
+        color: rgba(102, 102, 102, 0.8);
+    }
+    .error-message {
+        position: relative;
+        font-size: 13px;
+        top: 10px;
+    }
+    .text-field5 {
+        width: 525px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 4px;
+        font-size: 16px;
+    }
+    .sign-up2 {
+        position: relative;
+        font-weight: 500;
+    }
+    .sign-up-wrapper {
+        position: absolute;
+        top: calc(50% - 18.5px);
+        left: calc(50% - 79.5px);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .button {
+        width: 427px;
+        position: relative;
+        border-radius: 12px;
+        background-color: #ee5905;
+        height: 56px;
+        overflow: hidden;
+        flex-shrink: 0;
+        text-align: center;
+        color: #fff;
+        top: 20px;
+        left: 55px;
+    }
+    .button-Gris {
+        width: 427px;
+        position: relative;
+        border-radius: 12px;
+        background-color: #969992;
+        height: 56px;
+        overflow: hidden;
+        flex-shrink: 0;
+        text-align: center;
+        color: #fff;
+        top: 20px;
+        left: 55px;
+    }
+    .divider1 {
+        flex: 1;
+        position: relative;
+        background-color: rgba(102, 102, 102, 0.25);
+        height: 2px;
+    }
+    .divider {
+        width: 244px;
+        height: 16px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 23px;
+        top: 720px;
+        left: 180px;
+    }
+    .social-media-logo {
+        width: 24px;
+        position: relative;
+        height: 24px;
+        overflow: hidden;
+        flex-shrink: 0;
+    }
+    .social-media-logo-parent {
+        position: absolute;
+        top: calc(50% - 18x);
+        left: calc(50% - 147px);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+    .social-media-signuplogin {
+        width: 419px;
+        position: relative;
+        border-radius: 12px;
+        background-color: #fff;
+        border: 1px solid #333;
+        box-sizing: border-box;
+        height: 55px;
+        overflow: hidden;
+        flex-shrink: 0;
+        color: #333;
+        top: 65px;
+        left: 60px;
+    }
+    .email-parent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+        text-align: left;
+        font-size: 24px;
+    }
+    .crea-tu-cuenta-parent {
+        position: absolute;
+        top: calc(50% - 387.5px);
+        left: calc(50% - 483.5px);
+        width: 627px;
+        height: 753px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 21px;
+    }
+    .ya-tienes-una {
+        color: #333;
+    }
+    .span1 {
+        color: #666;
+    }
+    .ingresa {
+        text-decoration: underline;
+    }
+    .have-an-account-login {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 2px;
+    }
+    .frame-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .create-an-account-inner {
+        position: absolute;
+        top: 99px;
+        left: calc(50% - 302.5px);
+        width: 245px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        font-size: 16px;
+        color: #0a0d56;
+    }
+    .button-child {
+        width: 14px;
+        position: relative;
+        border-radius: 24px;
+        height: 0px;
+        object-fit: contain;
+    }
+    .button1 {
+        position: absolute;
+        top: 99px;
+        left: 41px;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+        border-radius: 100px;
+        background-color: #828282;
+        width: 39px;
+        height: 38px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 14px 0px;
+        box-sizing: border-box;
+    }
+    .create-an-account {
+        width: 1005px;
+        position: relative;
+        height: 1053px;
+        overflow: hidden;
+        flex-shrink: 0;
+    }
+    .crear-cuenta-juridica {
+        width: 100%;
+        position: relative;
+        background-color: #fff;
+        border: 1px solid rgba(102, 102, 102, 0.35);
+        box-sizing: border-box;
+        height: 1053px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: flex-start;
+        text-align: center;
+        font-size: 35px;
+        color: #666;
+        font-family: Poppins;
+    }
+    .alineacion-izq {
+        padding: 5px;
+        float: left;
+        width: 45%;
+        text-align: justify;
+    }
+    .alineacion-der {
+        padding: 5px;
+        float: right;
+        width: 45%;
+        text-align: justify;
+    }
+    .text-field8 {
+        align-self: stretch;
+        position: relative;
+        border-radius: 12px;
+        border: 1px solid rgba(102, 102, 102, 0.35);
+        box-sizing: border-box;
+        height: 56px;
+        overflow: hidden;
+        flex-shrink: 0;
+        font-size: 12px;
+        color: #828282;
+    }
+    .text-field9 {
+        width: 525px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 4px;
+        font-size: 16px;
+    }
+    input:required:invalid {
+        background-color: ivory;
+        border: none;
+        outline: 1px solid red;
+        border-radius: 5px;
+    }
+    select:required:invalid {
+        background-color: ivory;
+        border: none;
+        outline: 1px solid red;
+        border-radius: 5px;
+    }
+    .sign-up-modal {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        border-radius: 24px;
+        background-color: #fff;
+        width: 416px;
+        height: 512px;
+        overflow: hidden;
+    }
+    .modal-crear-usuario {
+        width: 100%;
+        position: relative;
+        border-radius: 24px;
+        background-color: #fff;
+        height: 512px;
+        overflow: hidden;
+        text-align: center;
+        font-size: 24px;
+        color: #0a0d56;
+        font-family: Poppins;
+    }
+    .frame-parent {
+        position: absolute;
+        top: 79px;
+        left: 37px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .bienvenido-de-vuelta-parent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2px;
+    }
+    .bienvenido-de-vuelta {
+        position: relative;
+        font-weight: 600;
+    }
+    .text {
+        width: 293px;
+        position: relative;
+        font-size: 16px;
+        color: rgba(102, 102, 102, 0.8);
+        display: inline-block;
+    }
+    .label-modal {
+        position: relative;
+    }
+    .introduce-tu-mensaje {
+        margin: 0;
+    }
+    .email-modal {
+        width: 342px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 6px;
+    }
+    .button-continuar {
+        width: 342px;
+        position: relative;
+        border-radius: 12px;
+        background-color: #ee5905;
+        height: 56px;
+        overflow: hidden;
+        flex-shrink: 0;
+        text-align: center;
+        font-size: 18px;
+        color: #fff;
+    }
+}
